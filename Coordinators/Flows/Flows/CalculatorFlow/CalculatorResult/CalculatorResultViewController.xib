@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorResultViewController" customModule="Flows" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="sAU-pr-bWp" id="r6W-cd-u48"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAU-pr-bWp">
+                    <rect key="frame" x="0.0" y="442.5" width="414" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpW-J1-MXM">
+                    <rect key="frame" x="165" y="463.5" width="84" height="30"/>
+                    <state key="normal" title="Open modal"/>
+                    <connections>
+                        <action selector="openModal" destination="-1" eventType="touchUpInside" id="MC2-lK-W1S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-r0-ph0">
+                    <rect key="frame" x="191" y="493.5" width="32" height="30"/>
+                    <state key="normal" title="Next"/>
+                    <connections>
+                        <action selector="next" destination="-1" eventType="touchUpInside" id="CWB-dX-pcs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. CalculatorResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG9-wM-Da7">
+                    <rect key="frame" x="135" y="413" width="144" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="sAU-pr-bWp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JMc-ZV-tl2"/>
+                <constraint firstItem="sAU-pr-bWp" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="NP3-43-FwJ"/>
+                <constraint firstItem="sAU-pr-bWp" firstAttribute="top" secondItem="MG9-wM-Da7" secondAttribute="bottom" constant="8.5" id="NrM-Yc-PuX"/>
+                <constraint firstItem="ehN-r0-ph0" firstAttribute="top" secondItem="CpW-J1-MXM" secondAttribute="bottom" id="Xbf-DP-waw"/>
+                <constraint firstItem="CpW-J1-MXM" firstAttribute="centerX" secondItem="sAU-pr-bWp" secondAttribute="centerX" id="bjS-ee-KrB"/>
+                <constraint firstItem="MG9-wM-Da7" firstAttribute="centerX" secondItem="sAU-pr-bWp" secondAttribute="centerX" id="isT-eM-jzc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sAU-pr-bWp" secondAttribute="trailing" id="iyY-Tn-Lph"/>
+                <constraint firstItem="CpW-J1-MXM" firstAttribute="top" secondItem="sAU-pr-bWp" secondAttribute="bottom" id="rjb-Ia-hOD"/>
+                <constraint firstItem="ehN-r0-ph0" firstAttribute="centerX" secondItem="CpW-J1-MXM" secondAttribute="centerX" id="uX7-BK-f9Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+</document>
